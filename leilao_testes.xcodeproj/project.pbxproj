@@ -17,6 +17,11 @@
 		42E0409527AA882B00F4D871 /* leilao_testesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E0409427AA882B00F4D871 /* leilao_testesTests.swift */; };
 		42E0409F27AA882B00F4D871 /* leilao_testesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E0409E27AA882B00F4D871 /* leilao_testesUITests.swift */; };
 		42E040A127AA882B00F4D871 /* leilao_testesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E040A027AA882B00F4D871 /* leilao_testesUITestsLaunchTests.swift */; };
+		42E040AE27AA888600F4D871 /* Lance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E040AD27AA888600F4D871 /* Lance.swift */; };
+		42E040B027AA889A00F4D871 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E040AF27AA889A00F4D871 /* Usuario.swift */; };
+		42E040B227AA88B300F4D871 /* Leilao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E040B127AA88B300F4D871 /* Leilao.swift */; };
+		42E040B427AA88C800F4D871 /* Avaliador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E040B327AA88C800F4D871 /* Avaliador.swift */; };
+		42E040B927AA8D6500F4D871 /* AvaliadorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E040B827AA8D6500F4D871 /* AvaliadorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		42E0409A27AA882B00F4D871 /* leilao_testesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = leilao_testesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E0409E27AA882B00F4D871 /* leilao_testesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leilao_testesUITests.swift; sourceTree = "<group>"; };
 		42E040A027AA882B00F4D871 /* leilao_testesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leilao_testesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		42E040AD27AA888600F4D871 /* Lance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lance.swift; sourceTree = "<group>"; };
+		42E040AF27AA889A00F4D871 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		42E040B127AA88B300F4D871 /* Leilao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leilao.swift; sourceTree = "<group>"; };
+		42E040B327AA88C800F4D871 /* Avaliador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avaliador.swift; sourceTree = "<group>"; };
+		42E040B827AA8D6500F4D871 /* AvaliadorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaliadorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +111,11 @@
 		42E0407927AA882900F4D871 /* leilao_testes */ = {
 			isa = PBXGroup;
 			children = (
+				42E040B527AA88DD00F4D871 /* Models */,
+				42E040B627AA890800F4D871 /* Views */,
+				42E040B727AA891800F4D871 /* Controllers */,
 				42E0407A27AA882900F4D871 /* AppDelegate.swift */,
 				42E0407C27AA882900F4D871 /* SceneDelegate.swift */,
-				42E0407E27AA882900F4D871 /* ViewController.swift */,
-				42E0408027AA882900F4D871 /* Main.storyboard */,
 				42E0408627AA882B00F4D871 /* Assets.xcassets */,
 				42E0408827AA882B00F4D871 /* LaunchScreen.storyboard */,
 				42E0408B27AA882B00F4D871 /* Info.plist */,
@@ -117,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				42E0409427AA882B00F4D871 /* leilao_testesTests.swift */,
+				42E040B827AA8D6500F4D871 /* AvaliadorTests.swift */,
 			);
 			path = leilao_testesTests;
 			sourceTree = "<group>";
@@ -128,6 +140,33 @@
 				42E040A027AA882B00F4D871 /* leilao_testesUITestsLaunchTests.swift */,
 			);
 			path = leilao_testesUITests;
+			sourceTree = "<group>";
+		};
+		42E040B527AA88DD00F4D871 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42E040AD27AA888600F4D871 /* Lance.swift */,
+				42E040AF27AA889A00F4D871 /* Usuario.swift */,
+				42E040B127AA88B300F4D871 /* Leilao.swift */,
+				42E040B327AA88C800F4D871 /* Avaliador.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42E040B627AA890800F4D871 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42E0408027AA882900F4D871 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42E040B727AA891800F4D871 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42E0407E27AA882900F4D871 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +302,12 @@
 			files = (
 				42E0407F27AA882900F4D871 /* ViewController.swift in Sources */,
 				42E0407B27AA882900F4D871 /* AppDelegate.swift in Sources */,
+				42E040B027AA889A00F4D871 /* Usuario.swift in Sources */,
 				42E0407D27AA882900F4D871 /* SceneDelegate.swift in Sources */,
+				42E040B227AA88B300F4D871 /* Leilao.swift in Sources */,
+				42E040B427AA88C800F4D871 /* Avaliador.swift in Sources */,
 				42E0408527AA882900F4D871 /* leilao_testes.xcdatamodeld in Sources */,
+				42E040AE27AA888600F4D871 /* Lance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42E0409527AA882B00F4D871 /* leilao_testesTests.swift in Sources */,
+				42E040B927AA8D6500F4D871 /* AvaliadorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
